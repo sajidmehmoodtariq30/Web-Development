@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms And Input</title>
+</head>
+
+<body>
+    <h1>Forms And Inputs in HTML</h1>
+    <!--This tag acts as a starting point for our form. action attribute tells browser where we want to send our data or input from the form -->
+    <form action="">
+        <!-- Label is used to add text before our input feild -->
+        <label for="username">Username:</label>&nbsp; &nbsp;&nbsp;&nbsp;
+        <!-- input is used to take input type of input can be specified with type attribute. -->
+        <input type="text" name="username" id=""> <br><br>
+        <!-- text attribute will take alphabets, numbers, symbols as input -->
+        <label for="fathername">Father Name:</label>
+        <input type="text" name="fathername" id=""> <br><br>
+        <!-- Email type will check wether given input is a valid email or not does not check if it exists or not -->
+        <label for="email">Email:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" name="Email" id=""> <br><br>
+        <!-- Password attribute hides text and shows sterics -->
+        <label for="password">Password:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" name="password" id=""> <br><br>
+        <!-- Number type will check wether given input is a valid number or not does not check if-->
+        <label for="phn-no">Phone No:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" name="phn-no" id=""><br><br>
+        <Label for="gender">Gender</Label>
+        <!-- With Radio user can select one of many options -->
+        <input type="radio" name="gender" id="male" value="male">Male
+        <input type="radio" name="gender" id="female" value="male">Female <br><br>
+        <Label for="marrige">Married</Label>
+        <!-- Checkbox returns true or false as output -->
+        <input type="checkbox" name="marrige" id=""> <br><br>
+        <!-- With color user can select color ans input -->
+        <Label for="color">Color</Label>
+        <input type="color" name="color" id=""> <br><br>
+        <!-- With date user can select date ans input -->
+        <Label for="d.o.b">Date of Birth:</Label>
+        <input type="date" name="d.o.b" id=""> <br><br>
+        <!-- With time user can select time ans input -->
+        <Label for="time">Time:</Label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="time" name="time" id=""> <br><br>
+        <!-- With datetime-local user can select date and time ans input -->
+        <Label for="joining-date"> Joining Date:</Label> &nbsp;
+        <input type="datetime-local" name="joining-date" id=""> <br><br>
+        <!-- With month user can select month ans input -->
+        <Label for="month">Month:</Label> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="month" name="month" id=""> <br><br>
+        <!-- With week user can select week ans input -->
+        <Label for="week">Week:</Label> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="week" name="week" id=""> <br><br>
+        <!-- With range user can select range ans input -->
+        <Label for="range">Range:</Label> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="range" name="range" id=""> <br><br>
+        <!-- With search user can search ans input -->
+        <Label for="search">Search:</Label> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="search" name="search" id=""> <br><br>
+        <!-- With url user can search ans input -->
+        <Label for="url">URL:</Label> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="url" name="url" id=""> <br><br>
+        <!-- submit type sends data when clicked -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
