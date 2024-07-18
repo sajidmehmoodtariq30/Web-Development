@@ -31,9 +31,9 @@
         <!-- With Radio user can select one of many options -->
         <input type="radio" name="gender" id="male" value="male">Male
         <input type="radio" name="gender" id="female" value="male">Female <br><br>
-        <Label for="marrige">Married</Label>
+        <Label for="marrige">UnMarried</Label>
         <!-- Checkbox returns true or false as output -->
-        <input type="checkbox" name="marrige" id=""> <br><br>
+        <input type="checkbox" name="marrige" checked="on" id=""> <br><br>
         <!-- With color user can select color ans input -->
         <Label for="color">Color</Label>
         <input type="color" name="color" id=""> <br><br>
@@ -70,6 +70,11 @@
         <input type="tel" name="tel_no" id=""><br><br>
         <!-- Reset input will reset the whole form -->
         <input type="reset" value="Reset"><br><br>
+        <label for="select">Province</label>
+        <select name="province" id="province">
+            <option value="KPK">KPK</option>
+            <option value="Punjab">Punjab</option>
+        </select> <br><br>
         <!-- submit type sends data when clicked -->
         <button type="submit">Submit</button>
     </form>
