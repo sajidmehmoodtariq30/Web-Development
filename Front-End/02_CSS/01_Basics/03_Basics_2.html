@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors and Selectors</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            background: grey;
+        }
+        h1{
+            color: #fff;
+            text-align: center;
+        }
+        .paragraph{
+            color: rgb(255, 255, 255);
+            margin: 1rem;
+        }
+        #selectors{
+            font-weight: 900;
+            font-size: 2.3rem;
+        }
+        #px{
+            height: 100px;
+            width: 100px;
+            background: #fff;
+            text-align: center;
+        }
+        #em{
+            height: 5em;
+            width: 5em;
+            margin-top: 2em;
+            background: #fff;
+            text-align: center;
+        }
+        #rem{
+            height: 5rem;
+            width: 5rem;
+            margin-top: 2rem;
+            background: #fff;
+            text-align: center;
+        }
+        .block{
+            height: 100px;
+            width: 100px;
+            background: #fff;
+            display: block;
+            margin-top: 1rem;
+        }
+        .inline{
+            color: #fff;
+            display: inline;
+            margin-top: 1rem;
+            margin-left: 1rem;
+        }
+        #flex{
+            display: flex;
+            padding: 1rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color in CSS</h1>
+    <p class="paragraph">By Name</p>
+    <p class="paragraph">RGB</p>
+    <p class="paragraph">Hexadecimal code</p>
+    <h1 id="selectors">Selectors</h1>
+    <p class="paragraph">Universal selector</p>
+    <p class="paragraph">Element selector</p>
+    <p class="paragraph">Class selector</p>
+    <p class="paragraph">Id selector</p>
+    <h1>Units</h1>
+    <p class="paragraph">px is absolute unit 1px = 1/96 of inch</p>
+    <p class="paragraph">em means two times of current size</p>
+    <p class="paragraph">rem means relative to font size of root element</p>
+    <p class="paragraph">% means relative to parent element</p>
+    <p class="paragraph">vw means relative to 1% of width of viewport</p>
+    <p class="paragraph">vh means relative to 1% of height of viewport</p>
+
+    <div id="px">100 by 100</div>
+    <div id="em">5 by 5</div>
+    <div id="rem">5 by 5</div>
+    <h1>Display Property</h1>
+    <h2>Block</h2>
+    <div class="block"></div>
+    <div class="block"></div>
+    <h2>Inline</h2>
+    <h2 class="inline">Hello</h2>
+    <h2 class="inline">Hello</h2>
+    <h2>Flex</h2>
+    <div id="flex">
+        <h2>Hello Hello</h2>
+    </div>
+</body>
+</html>
