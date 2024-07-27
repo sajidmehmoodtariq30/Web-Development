@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #131322;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball1{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(to right,rgb(158 50 172),#EFE8F3);
+    position: absolute;
+    transform: translate(360px, 100px);
+}
+
+.ball2{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(to right,rgb(158 50 172),#EFE8F3);
+    position: absolute;
+    transform: translate(700px, 300px);
+}
+
+#card{
+    width: 375px;
+    height: 225px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 25px;
+    z-index: 1;
+}
+
+.card-content img{
+    width: 48px;
+    margin-right: 10px;
+}
+
+.card-content h5{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-left{
+    display: flex;
+    align-items: center;
+}
+
+.card-details{
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-details h5{
+    font-weight: 100;
+}
+
+.card-details>p{
+    font-size: 1.5rem;
+}
+
+.card-details-p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dates{
+    transform: translate(0,-20px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
