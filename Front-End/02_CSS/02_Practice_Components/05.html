@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #fff;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-image: url('../../images/pexels-joshsorenson-1714205.jpg');
+
+        }
+
+        header {
+            width: 30vh;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(25px);
+            display: none;
+        }
+
+        hr {
+            margin: 1rem 0;
+            width: 100%;
+        }
+
+        header nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+            height: 100%;
+        }
+
+        header nav ul li a {
+
+            text-decoration: none;
+        }
+
+        header nav ul li {
+            font-size: 1.5rem;
+            list-style-type: none;
+        }
+
+        .upper {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .bottom {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .bottom li a img {
+            width: 30px;
+        }
+
+        #section img {
+            width: 40px;
+        }
+
+        #section>img:hover header {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <nav>
+                <ul class="upper">
+                    <h1>CodeSphere</h1>
+                    <hr>
+                    <li><a href="#">DashBoard</a></li>
+                    <li><a href="#">Shortcuts</a></li>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+                <ul class="bottom">
+                    <li><a href="#"><img src="../../images/github.png" alt="GIthub"></a></li>
+                    <li><a href="#"><img src="../../images/twitter.png" alt="GIthub"></a></li>
+                    <li><a href="#"><img src="../../images/linkedin.png" alt="GIthub"></a></li>
+                    <li><a href="#"><img src="../../images/instagram.png" alt="GIthub"></a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <div id="section">
+            <img src="../../images/menu.png" alt="">
+        </div>
+    </div>
+    <script>
+        const img = document.querySelector('#section img');
+        const header = document.querySelector('header');
+
+        img.addEventListener('click', () => {
+            header.style.display = header.style.display === 'block' ? 'none' : 'block';
+        });
+
+        document.addEventListener('click', (e) => {
+            if (e.target !== img && e.target !== header && !header.contains(e.target)) {
+                header.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
