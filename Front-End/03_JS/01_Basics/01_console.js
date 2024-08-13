@@ -4,7 +4,7 @@
     If we define the file extension then it is understood that text written in that file is not random and each word has a specific meaning. Like if we use .c extension then compiler will check it according to the rules of c.
     Similalrly if we use .js extension compiler or in this case runtime environment will  check it according to the rules of JavaScript.    
 */
-//is an object that provides access to the browser's debugging console. It allows to log messages, errors, warnings, and other useful information for debugging purposes. The most commonly used method of the console object is 
+// Console is an object that provides access to the browser's debugging console. It allows to log messages, errors, warnings, and other useful information for debugging purposes. The most commonly used method of the console object is 
 // console.log(), which outputs messages to the console.
 console.log("Sajid Mehmood Tariq");
 // console.error() Logs an error message to the console.
@@ -16,7 +16,7 @@ console.info("This is an info");
 // console.table() Logs an array or object to the console, formatted as a table.
 console.table({name: "Sajid Mehmood Tariq", age: 20});
 
-console.clear(); // Clears all previous messages from the console.
+// console.clear(); Clears all previous messages from the console.
 console.count(); // Counts the number of times console.count() has been called.
 
 console.countReset(); // Resets the count to 0.
