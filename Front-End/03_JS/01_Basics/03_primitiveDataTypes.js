@@ -28,17 +28,17 @@ const symbol2 = Symbol("description");
 
 console.table({
     usrName, 
-    typeUsrName, 
+    typeUsrName,            // string
     age, 
-    typeAge, 
+    typeAge,                // number
     isMale, 
-    typeisMale, 
+    typeisMale,             // boolean
     accountAge, 
-    typeAccountAge,
+    typeAccountAge,         // undefined
     userMiddleName,
-    typeUserMiddleName,
+    typeUserMiddleName,     // object
     largeNumber,
-    typeLargeNumber,
+    typeLargeNumber,        // bigint
     symbol1,
-    typeSymbol1
+    typeSymbol1             // symbol 
 });  
