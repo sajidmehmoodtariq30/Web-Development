@@ -23,7 +23,8 @@ section{
     border-radius: 50%;
     background: linear-gradient(to right,rgb(158 50 172),#EFE8F3);
     position: absolute;
-    transform: translate(360px, 100px);
+    top: 18%;
+    left: 28%;
 }
 
 .ball2{
@@ -32,7 +33,8 @@ section{
     border-radius: 50%;
     background: linear-gradient(to right,rgb(158 50 172),#EFE8F3);
     position: absolute;
-    transform: translate(700px, 300px);
+    bottom: 18%;
+    right: 28%;
 }
 
 #card{
