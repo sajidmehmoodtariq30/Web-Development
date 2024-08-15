@@ -5,7 +5,11 @@ Data types in JS are divided into two categories
 1. Primitive data types  
 2. Non-primitive data types
 */
-// There are seven primitive data types i.e. string, number, boolean, bigint, null, undefined
+// There are seven primitive data types i.e. string, number, boolean, bigint, null, undefined and symbol
+// primitive data types are call by value means whenever they are copied actual reference is not given but a copy is given example 
+let b = 5; let a;
+a = b+1;
+// here value of b is still 5
 let usrName = "Sajid" 
 const typeUsrName = typeof(usrName);
 let age = 17;
