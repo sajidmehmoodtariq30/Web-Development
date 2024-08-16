@@ -1,36 +1,44 @@
-<!-- Flipping Card -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Component</title>
+    <title>Flipping Card</title>
     <link rel="stylesheet" href="02.css">
 </head>
 
 <body>
-    <div class="ball1"></div>
-    <div class="ball2"></div>
     <section>
-        <div id="card">
-            <div class="card-content">
-                <div class="content-left">
-                    <img src="../../images/master_card.png" alt="">
-                    <h5>MasterCard</h5>
-                </div>
-                <img src="../../images/chip.png" alt="">
-            </div>
-            <div class="card-details">
-                <h5>Card Number</h5>
-                <p>35201 8468 9715 3012</p>
-                <div class="card-details-p">
-                    <h3>Sajid Mehmood Tariq</h3>
-                    <div class="dates">
-                        <p>Valid Thru</p>
-                        <p>5/28</p>
+        <div id="container">
+            <div class="card front">
+                <header>
+                    <span class="logo">
+                        <img src="../../images/master_card.png" alt="">
+                        <h5>Master Card</h5>
+                    </span>
+                    <img src="../../images/chip.png" class="chip" alt="">
+                </header>
+                <main>
+                    <div class="name-number">
+                        <h6>Card Number</h6>
+                        <h5 class="number">3520 1846 8971 5301</h5>
+                        <h5 class="name">Sajid Mehmood Tariq</h5>
                     </div>
-                </div>
+                    <div class="valid-details">
+                        <h6>Valid Till</h6>
+                        <h5>05/28</h5>
+                    </div>
+                </main>
+            </div>
+            <div class="card back">
+                <h6>For customer services call +923229667494 or email at sajidmehmoodtariq5@gmail.com</h6>
+                <span class="magnetic-strip"></span>
+                <div class="signature"><i>005</i></div>
+                <h5>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perferendis provident et consequatur ipsam molestiae tempore odio ut deserunt nulla laborum esse, similique voluptatum inventore laudantium aspernatur placeat nisi eveniet?
+                </h5>
+
             </div>
         </div>
     </section>
