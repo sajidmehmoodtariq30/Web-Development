@@ -6,7 +6,7 @@ Data types in JS are divided into two categories
 2. Non-primitive data types
 */
 // There are seven primitive data types i.e. string, number, boolean, bigint, null, undefined and symbol
-// primitive data types are call by value means whenever they are copied actual reference is not given but a copy is given example 
+
 let b = 5; let a;
 a = b+1;
 // here value of b is still 5
@@ -46,3 +46,14 @@ console.table({
     symbol1,
     typeSymbol1             // symbol 
 });  
+
+// also Primitive data type uses Stack Memory
+// primitive data types are call by value means whenever they are copied actual reference is not given but a copy is given example 
+let usrname = "sajidmtariq"
+let anotherusrname = usrname;
+anotherusrname = "sajidmehmoodtariq30"
+// console.log(usrname); // Output: sajidmtariq
+
+// here anotherusrname is a copy of usrname but not a reference so when we change another
+//usrname it does not affect the original variable usrname
+
