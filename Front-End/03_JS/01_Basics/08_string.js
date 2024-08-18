@@ -22,18 +22,8 @@ const usrname = new String('sajid-m-tariq');
 typeof usrname // Output: "object"
 usrname instanceof String // Output: true
 
-/*
-Methods Inherited from the Object Prototype:
-valueOf()
-toString()
-hasOwnProperty()
-isPrototypeOf()
-propertyIsEnumerable()
-toLocaleString()
-constructor
+// new method should only be used if a specific object prototype method is to be used.
 
-new method should only be used if a specific object prototype method is to be used.
-*/
 
 const firstName = usrname.substring(0,usrname.indexOf('-'))
 
